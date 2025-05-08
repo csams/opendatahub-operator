@@ -361,7 +361,6 @@ _Appears in:_
 
 
 DSCLlamaStackOperator contains all the configuration exposed in DSC instance for LlamaStackOperator component
-( utilize DSC prefix here for naming consistency with the other integrated components )
 
 
 
@@ -1181,7 +1180,7 @@ _Appears in:_
 
 
 
-LlamaStackOperator is the Schema for the new component API
+LlamaStackOperator is the Schema for the LlamaStackOperator API
 
 
 

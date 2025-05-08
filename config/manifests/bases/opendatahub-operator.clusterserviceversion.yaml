@@ -24,11 +24,6 @@ spec:
   apiservicedefinitions: {}
   customresourcedefinitions:
     owned:
-    - description: LlamaStackOperator is the Schema for the LlamaStackOperator API
-      displayName: LlamaStack Operator
-      kind: LlamaStackOperator
-      name: llamastackoperators.components.platform.opendatahub.io
-      version: v1alpha1
     - description: Auth is the Schema for the auths API
       displayName: Auth
       kind: Auth
@@ -74,6 +69,11 @@ spec:
       displayName: Kueue
       kind: Kueue
       name: kueues.components.platform.opendatahub.io
+      version: v1alpha1
+    - description: LlamaStackOperator is the Schema for the LlamaStackOperator API
+      displayName: Llama Stack Operator
+      kind: LlamaStackOperator
+      name: llamastackoperators.components.platform.opendatahub.io
       version: v1alpha1
     - description: ModelMeshServing is the Schema for the modelmeshservings API
       displayName: Model Mesh Serving
@@ -143,6 +143,7 @@ spec:
   - modelregistry
   - feast
   - featurestore
+  - llamastack
   links:
   - name: Open Data Hub
     url: https://opendatahub.io
