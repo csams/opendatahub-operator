@@ -17,15 +17,13 @@ const (
 
 var (
 	ManifestsSourcePath = map[common.Platform]string{
-		cluster.SelfManagedRhoai: "",
-		cluster.ManagedRhoai:     "",
-		cluster.OpenDataHub:      "",
-		// cluster.SelfManagedRhoai: "overlays/rhoai",
-		// cluster.ManagedRhoai:     "overlays/rhoai",
-		// cluster.OpenDataHub:      "overlays/odh",
+		cluster.SelfManagedRhoai: "overlays/rhoai",
+		cluster.ManagedRhoai:     "overlays/rhoai",
+		cluster.OpenDataHub:      "overlays/odh",
 	}
+
 	imageParamMap = map[string]string{
-		"RELATED_IMAGE_LLAMASTACK_OPERATOR": "RELATED_IMAGE_ODH_LLAMASTACK_OPERATOR_IMAGE",
+		"RELATED_IMAGE_ODH_LLAMASTACK_OPERATOR": "RELATED_IMAGE_ODH_LLAMASTACK_OPERATOR",
 	}
 
 	conditionTypes = []string{
